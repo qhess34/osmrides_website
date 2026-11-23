@@ -19,5 +19,5 @@ Après 3 ou 4 demandes ou une grande étape : mettre à jour « État courant »
 _23/11/2026, session Webmestre n° 1._
 
 - #1 fait : `index.html` (projet, jeux, principes, contribuer) + `site.css` (thème des pages du jeu) + workflow Pages. Testé : Chromium sans erreur, 390 px sans défilement horizontal.
-- Carte « Parc Astérix » : lien provisoire vers https://qhess34.github.io/osmrides/ ; passer à https://qhess34.github.io/osmrides_parks/ dès que ce dépôt publie ses Pages (commentaire dans `index.html`).
+- #2 fait : carte « Parcs d'attractions » → https://qhess34.github.io/osmrides_parks/ ; `apropos.html` reprise d'osmrides (liens vers les Pages des parcs) ; adresse transmise au Chef parcs par une issue `inter-equipe` dans osmrides_parks.
 - Carte « Stations de ski » : « Bientôt », sans lien, tant qu'osmrides_skiresort ne publie rien.
