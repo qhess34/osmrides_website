@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f1626">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<title>OSMrides</title>
+<meta name="description" content="OSMrides : simulations d'exploitation, vues du dessus, sur les données réelles d'OpenStreetMap. Parcs d'attractions, bientôt stations de ski. Jeu de fan non officiel.">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="wrap">
+<header class="top">
+  <img src="img/logo/logo.svg" width="88" height="88" alt="">
+  <h1>OSMrides</h1>
+  <p>Des simulations d'exploitation, vues du dessus, construites sur le terrain réel tel que le décrit OpenStreetMap. Vous ne pilotez pas un véhicule : vous tenez le poste de commande.</p>
+  <nav class="nav" aria-label="Sections">
+    <a class="btn main" href="#jeux">Les jeux</a>
+    <a class="btn" href="#principes">Principes</a>
+    <a class="btn" href="#contribuer">Contribuer</a>
+  </nav>
+</header>
+<main id="main">
+
+<section id="projet" aria-labelledby="t-projet">
+  <h2 id="t-projet">Le projet</h2>
+  <p>OSMrides part d'un constat simple : OpenStreetMap décrit déjà, au mètre près, le tracé d'une montagne russe, sa gare, sa file d'attente, ou les remontées et les pistes d'une station. Le projet en fait des simulateurs où l'on exploite ces installations comme le ferait une équipe sur place : départs, sécurité, file, garage, pannes, météo.</p>
+  <p>Tout fonctionne dans le navigateur, sur ordinateur comme sur téléphone, sans compte ni installation. Le jeu peut ensuite s'installer comme une application et fonctionner hors ligne.</p>
+</section>
+
+<section id="jeux" aria-labelledby="t-jeux">
+  <h2 id="t-jeux">Les jeux</h2>
+  <div class="grid">
+    <!-- Lien vers le jeu publié par le dépôt osmrides ; à remplacer par https://qhess34.github.io/osmrides_parks/ dès que ce dépôt publie ses Pages. -->
+    <a class="card" href="https://qhess34.github.io/osmrides/">
+      <img src="img/jeux/parc-asterix.jpg" width="630" height="360" alt="Gare de Tonnerre 2 Zeus vue de dessus, dans le jeu">
+      <div class="in">
+        <h3>Parc Astérix</h3>
+        <p>Chef d'attraction sur Tonnerre 2 Zeus, la Trace du Hourra, OzIris et Goudurix : pupitre, trains, quai, file et garage.</p>
+        <span class="etat">Jouer</span>
+      </div>
+    </a>
+    <!-- Pas encore publié (dépôt osmrides_skiresort) : carte sans lien. -->
+    <div class="card soon">
+      <div class="in">
+        <h3>Stations de ski</h3>
+        <p>Exploitation des remontées mécaniques d'un domaine skiable, sur leur tracé réel. Premier domaine étudié : Vars Les Claux.</p>
+        <span class="etat">Bientôt</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="principes" aria-labelledby="t-princ">
+  <h2 id="t-princ">Principes</h2>
+  <div class="facts">
+    <div class="fact"><h3>OpenStreetMap est la référence</h3><p>Tracés, gares, files, bâtiments et chemins viennent d'OpenStreetMap. Quand la carte change, le jeu suit.</p></div>
+    <div class="fact"><h3>Commande par zones</h3><p>Comme au vrai pupitre, on commande des zones (gare, lift, freins, garage), jamais un train à la main. Les sécurités s'ouvrent et se verrouillent au bouton.</p></div>
+    <div class="fact"><h3>Estimations signalées</h3><p>Ce qu'OpenStreetMap ne dit pas (hauteurs, longueur des wagons, couleurs) est estimé, et toujours présenté comme tel, jamais comme mesuré.</p></div>
+    <div class="fact"><h3>Rendu réaliste</h3><p>Vue aérienne crédible, couleurs sourdes, rien d'enfantin : on regarde une installation, pas un dessin animé.</p></div>
+  </div>
+</section>
+
+<section id="contribuer" aria-labelledby="t-contrib">
+  <h2 id="t-contrib">Contribuer</h2>
+  <h3>Améliorer la carte</h3>
+  <p>La meilleure façon d'améliorer le jeu est d'améliorer <a href="https://www.openstreetmap.org/">OpenStreetMap</a> : tracé d'une voie, gare, chemin de file, revêtement d'une allée, matériau d'une barrière. Ces informations profitent à tous les utilisateurs de la carte, et le jeu les reprend.</p>
+  <h3>L'éditeur local</h3>
+  <p>Ce qui relève du jeu et non de la carte (barrières de file, salle de contrôle, zone d'attente du quai, trains) se règle dans un éditeur qui s'ouvre sur son propre ordinateur et montre le rendu exact du jeu. Les réglages qui ont un équivalent dans OpenStreetMap peuvent y être renvoyés à la demande, jamais automatiquement. Mode d'emploi : <a href="https://github.com/qhess34/osmrides/blob/main/editor/README.md">éditeur OSMrides</a>.</p>
+  <h3>Le code</h3>
+  <p>Le code est ouvert : <a href="https://github.com/qhess34/osmrides">moteur</a>, <a href="https://github.com/qhess34/osmrides_parks">parcs</a>, <a href="https://github.com/qhess34/osmrides_skiresort">stations de ski</a>, <a href="https://github.com/qhess34/osmrides_website">ce site</a>. Remarques et erreurs constatées : ouvrir une issue dans le dépôt concerné.</p>
+</section>
+
+</main>
+<footer>
+  <p>Jeu de fan non officiel, sans lien avec les parcs et stations représentés.<br>Données © contributeurs <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, licence ODbL.</p>
+</footer>
+</div>
+</body>
+</html>

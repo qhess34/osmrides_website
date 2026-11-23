@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="OSMrides">
+  <!-- Logo OSMrides : carte pliée (plis, quadrillage, courbes de niveau) et montagnes russes vues de profil (lift, chute, looping, supports), couleurs de site.css -->
+  <defs>
+    <clipPath id="c"><rect width="100" height="100" rx="18"/></clipPath>
+    <path id="t" d="M6 78 L16 78 L34 24 C37 16, 41 16, 44 26 L53 64 C55 72, 60 72, 64 66 C 72 56, 80 42, 72 34 C 64 27, 54 38, 62 52 C 68 62, 76 70, 86 70 L96 70"/>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="100" height="100" fill="#0f1626"/>
+    <!-- plis de la carte -->
+    <path d="M0 0H33V100H0Z" fill="#131c32"/>
+    <path d="M33 0H67V100H33Z" fill="#17213a"/>
+    <path d="M67 0H100V100H67Z" fill="#121a2f"/>
+    <path d="M33 0V100M67 0V100" stroke="#0b111e" stroke-width=".8"/>
+    <!-- quadrillage -->
+    <path d="M0 25H100M0 50H100M0 75H100M16.5 0V100M50 0V100M83.5 0V100" stroke="#1f2b47" stroke-width=".5"/>
+    <!-- courbes de niveau (le relief de la carte sert de sol) -->
+    <g fill="none" stroke="#32426a" stroke-width=".9">
+      <path d="M-4 90 C 14 84, 30 94, 50 88 S 80 94, 104 86"/>
+      <path d="M-4 97 C 18 92, 34 100, 54 95 S 82 100, 104 94"/>
+      <ellipse cx="80" cy="14" rx="11" ry="5"/>
+      <ellipse cx="80" cy="14" rx="5" ry="2.2"/>
+    </g>
+    <!-- sol et supports -->
+    <path d="M4 83H96" stroke="#32426a" stroke-width="1.4"/>
+    <g stroke="#55658c" stroke-width="1.3">
+      <path d="M20 66V83M26 48V83M32 30V83M38 18V83M47 40V83M51 56V83M66 64V83M86 70V83M94 70V83"/>
+      <path d="M26 83L32 30M38 83L32 30M44 83L38 18" stroke-width=".8"/>
+    </g>
+    <!-- gare -->
+    <rect x="4" y="72" width="13" height="5" rx=".8" fill="#9aa7c4"/>
+    <!-- voie : ombre, traverses, rails -->
+    <use href="#t" fill="none" stroke="#070b14" stroke-opacity=".5" stroke-width="8" stroke-linejoin="round" transform="translate(1.2 1.6)"/>
+    <use href="#t" fill="none" stroke="#8a6f35" stroke-width="7" stroke-dasharray="1 2.6" stroke-linejoin="round"/>
+    <use href="#t" fill="none" stroke="#f2c14e" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <use href="#t" fill="none" stroke="#17213a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

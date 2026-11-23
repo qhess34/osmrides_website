@@ -16,6 +16,8 @@ Après 3 ou 4 demandes ou une grande étape : mettre à jour « État courant »
 
 ## État courant
 
-_23/11/2026, mis en place par la session de pilotage n° 9 d'osmrides._
+_23/11/2026, session Webmestre n° 1._
 
-Dépôt vide au 23/11. À faire : site d'accueil (reprendre l'esprit de `index.html` et `apropos.html` d'osmrides : sobre, réaliste, aucun pictogramme ni emoji), liens vers les Pages des jeux.
+- #1 fait : `index.html` (projet, jeux, principes, contribuer) + `site.css` (thème des pages du jeu) + workflow Pages. Testé : Chromium sans erreur, 390 px sans défilement horizontal.
+- Carte « Parc Astérix » : lien provisoire vers https://qhess34.github.io/osmrides/ ; passer à https://qhess34.github.io/osmrides_parks/ dès que ce dépôt publie ses Pages (commentaire dans `index.html`).
+- Carte « Stations de ski » : « Bientôt », sans lien, tant qu'osmrides_skiresort ne publie rien.
